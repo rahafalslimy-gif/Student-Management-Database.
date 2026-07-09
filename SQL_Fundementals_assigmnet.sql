@@ -323,8 +323,7 @@ LEFT JOIN students s ON e.student_id = s.student_id;
 
 -- RIGHT JOIN: all instructors, including ones with no courses
 -- (LEFT JOIN is generally preferred for readability because the "kept" table
---  stays on the left, but RIGHT JOIN is used here to satisfy the requirement
---  and is functionally equivalent to swapping the table order in a LEFT JOIN)
+--  stays on the left,  is functionally equivalent to swapping the table order in a LEFT JOIN)
 SELECT i.full_name AS instructor_name, c.course_name
 FROM courses c
 RIGHT JOIN instructors i ON c.instructor_id = i.instructor_id;
