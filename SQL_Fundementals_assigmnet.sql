@@ -6,7 +6,7 @@
 -- =====================================================================
 -- Task 1: Create Database and Tables
 -- =====================================================================
-
+DROP DATABASE IF EXISIT training_center_db;
 CREATE DATABASE training_center_db;
 USE training_center_db;
 
